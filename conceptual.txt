@@ -1,0 +1,15 @@
+Step Seven: Research and Understand Login Strategy
+
+Look over the code in app.py related to authentication.
+    
+  How is the logged in user being kept track of?
+    By the "g" object.
+
+  What is Flask’s g object?
+    A namespace object that has the same lifetime as an application context. 
+
+  What is the purpose of add_user_to_g?
+    It adds the user to the context of the application for the duration of the user being logged in.
+
+  What does @app.before_request mean?
+    It means add the user to the "g" object before any other request is made.
